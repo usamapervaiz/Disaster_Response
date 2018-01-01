@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="#005862"
+        android:id="@+id/relativeLayout6"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Treatment"
+            android:layout_gravity="center"
+            android:textColor="#ffffff"
+            android:textSize="24dp"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/Treatmentview" />
+
+        <ImageView
+            android:layout_width="44dp"
+            android:layout_height="40dp"
+            android:id="@+id/checkwhitetreatmento"
+            android:background="@drawable/checkwhite"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="11dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="#ffffff"
+        android:id="@+id/relativeLayout7"
+        android:layout_below="@+id/relativeLayout6"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true">
+
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/scrollView3" >
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Time by server"
+                    android:id="@+id/timebyservertreatmento"
+                    android:autoText="false"
+                    android:textColor="#060505"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_horizontal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="patient info"
+                    android:id="@+id/opatientinfo"
+                    android:autoText="false"
+                    android:textColor="#060505"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_horizontal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:id="@+id/alerttreatmento"
+                    android:textColor="#f00"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_below="@+id/timebyservertreatmento"
+                    android:layout_centerHorizontal="true" />
+
+                <TextView
+                    android:layout_width="255dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Oxygyne"
+                    android:textColor="#140051"
+                    android:id="@+id/titlemenu"
+                    android:textSize="30dp"
+                    android:gravity="center"
+                    android:layout_below="@+id/alerttreatmento"
+                    android:layout_centerHorizontal="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:id="@+id/notebvm"
+                    android:layout_below="@+id/timebyservertreatmentvital"
+                    android:layout_centerHorizontal="true" />
+
+                <TextView
+                    android:layout_width="255dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="By"
+                    android:textColor="#140051"
+                    android:id="@+id/textView12"
+                    android:textSize="30dp"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/titlemenu"
+                    android:layout_alignLeft="@+id/titlemenu"
+                    android:layout_alignStart="@+id/titlemenu" />
+
+                <EditText
+                    android:layout_width="222dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/obyedit"
+                    android:layout_gravity="center"
+                    android:layout_below="@+id/titlemenu"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp" />
+
+                <TextView
+                    android:layout_width="255dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="L/Min"
+                    android:textColor="#140051"
+                    android:id="@+id/textView17"
+                    android:textSize="30dp"
+                    android:gravity="center"
+                    android:layout_below="@+id/obyedit"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp" />
+
+                <EditText
+                    android:layout_width="222dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/lminoedit"
+                    android:layout_gravity="center"
+                    android:layout_below="@+id/textView17"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp" />
+
+                <TextView
+                    android:layout_width="255dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Initials"
+                    android:textColor="#140051"
+                    android:id="@+id/textView18"
+                    android:textSize="30dp"
+                    android:gravity="center"
+                    android:layout_below="@+id/lminoedit"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp" />
+
+                <EditText
+                    android:layout_width="222dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/initialsoedit"
+                    android:layout_gravity="center"
+                    android:layout_below="@+id/textView18"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp" />
+            </LinearLayout>
+        </ScrollView>
+
+    </RelativeLayout>
+</RelativeLayout>

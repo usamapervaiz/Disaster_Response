@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="#005862"
+        android:id="@+id/relativeLayout6"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Treatment"
+            android:layout_gravity="center"
+            android:textColor="#ffffff"
+            android:textSize="24dp"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/Treatmentview" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="#ffffff"
+        android:id="@+id/relativeLayout7"
+        android:layout_below="@+id/relativeLayout6"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/alerttreatmentbvm"
+            android:textColor="#f00"
+            android:layout_gravity="center_horizontal"
+            android:layout_below="@+id/notebvm"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/notebvm"
+            android:layout_centerHorizontal="true" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:background="#ffffff"
+            android:id="@+id/relativeLayout8"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="54dp"
+            android:layout_below="@+id/alerttreatmentbvm">
+
+            <Button
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="BVM"
+                android:id="@+id/bvmbutton"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:background="#96f9f4"
+                android:layout_toLeftOf="@+id/etbutton"
+                android:layout_toStartOf="@+id/etbutton" />
+
+            <Button
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="ET"
+                android:id="@+id/etbutton"
+                android:background="#7993bf"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+
+            <Button
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="EOA"
+                android:id="@+id/eoabutton"
+                android:background="#96f9f4"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/etbutton"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <Button
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="O2"
+                android:id="@+id/o2button"
+                android:background="#96f9f4"
+                android:layout_below="@+id/bvmbutton"
+                android:layout_centerHorizontal="true" />
+
+            <Button
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="Bleeding"
+                android:id="@+id/bleedingbutton"
+                android:background="#7993bf"
+                android:layout_alignTop="@+id/o2button"
+                android:layout_toRightOf="@+id/o2button"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <Button
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="PTL"
+                android:id="@+id/ptlbutton"
+                android:background="#7993bf"
+                android:layout_alignTop="@+id/o2button"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_toLeftOf="@+id/o2button"
+                android:layout_toStartOf="@+id/o2button" />
+
+            <Button
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="Spinal"
+                android:id="@+id/spinalbutton"
+                android:background="#7993bf"
+                android:layout_toLeftOf="@+id/bleedingbutton"
+                android:layout_toStartOf="@+id/bleedingbutton"
+                android:layout_below="@+id/ptlbutton" />
+
+            <Button
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="IV"
+                android:id="@+id/ivbutton"
+                android:background="#96f9f4"
+                android:layout_alignTop="@+id/spinalbutton"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_toRightOf="@+id/spinalbutton"
+                android:layout_toEndOf="@+id/spinalbutton" />
+
+            <Button
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="Hz Decon"
+                android:id="@+id/hzdeconbutton"
+                android:background="#96f9f4"
+                android:layout_above="@+id/mastbutton"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_toLeftOf="@+id/spinalbutton"
+                android:layout_toStartOf="@+id/spinalbutton" />
+
+            <Button
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="other"
+                android:id="@+id/otherbutton"
+                android:background="#7993bf"
+                android:layout_below="@+id/ivbutton"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignLeft="@+id/ivbutton"
+                android:layout_alignStart="@+id/ivbutton" />
+
+            <Button
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="Mast"
+                android:id="@+id/mastbutton"
+                android:background="#7993bf"
+                android:layout_below="@+id/spinalbutton"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_toLeftOf="@+id/spinalbutton"
+                android:layout_toStartOf="@+id/spinalbutton" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/treatmenupatientinfo"
+            android:textColor="#000"
+            android:layout_gravity="center_horizontal"
+            android:text="patinet info"
+            android:layout_below="@+id/alerttreatmentbvm"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+</RelativeLayout>

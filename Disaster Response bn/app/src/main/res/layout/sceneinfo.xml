@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="nasaprojects.disasterresponse.MainActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentTop="true">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#590109">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Scene Info"
+                    android:id="@+id/textView"
+                    android:layout_gravity="center"
+                    android:textColor="#ffffff"
+                    android:textSize="28dp"
+                    android:gravity="center"
+
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="10dp" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text=""
+                android:textColor="#f00"
+                android:id="@+id/alertsceneinfo"
+                android:layout_gravity="center_horizontal"
+                 />
+
+
+            <ImageButton
+                android:layout_width="111dp"
+                android:layout_height="111dp"
+                android:id="@+id/addscenepic"
+                android:layout_gravity="center_horizontal"
+                android:clickable="true"
+                android:background="@drawable/camerai" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="click to Add scene pic"
+                android:textColor="#210"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/textView6" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Date and Time"
+                android:textColor="#210"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/datetimesceneinfo"
+                android:layout_marginTop="7dp" />
+
+            <EditText
+                android:layout_width="222dp"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:id="@+id/scenenumber"
+                android:layout_marginTop="11dp"
+                android:hint="Scene Number"
+                android:layout_gravity="center"
+                android:textColorHint="#220303" />
+
+
+            <Spinner
+                android:layout_width="222dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/disastertype"
+                android:entries="@array/disasters_arrays"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/scenedateandtime"
+                android:layout_marginTop="18dp"
+                android:layout_gravity="center"
+                />
+
+
+            <RadioGroup
+                android:layout_width="222dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+
+                android:id="@+id/gpsormanual">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Gps location"
+                    android:textColor="#210"
+                    android:layout_gravity="center_horizontal"
+                    android:id="@+id/gpstext" />
+
+                <RadioButton
+                    android:id="@+id/radiogps"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Gps Auto location"
+                    android:checked="true" />
+
+                <RadioButton
+                    android:id="@+id/radiomanualgps"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Enter location manually" />
+            </RadioGroup>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/layout_gpsormanual_addsceneinfopage"
+            android:visibility="gone">
+
+
+            <EditText
+                android:layout_width="222dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/countryaddress"
+                android:layout_marginTop="11dp"
+                android:hint="Country"
+                android:layout_gravity="center"
+                android:textColorHint="#220303" />
+
+            <EditText
+                android:layout_width="222dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/cityaddress"
+                android:layout_marginTop="11dp"
+                android:hint="City name"
+                android:layout_gravity="center"
+                android:textColorHint="#220303" />
+
+            <EditText
+                android:layout_width="222dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/streetnameaddress"
+                android:layout_marginTop="11dp"
+                android:hint="Street Address"
+                android:layout_gravity="center"
+                android:textColorHint="#220303" />
+
+            <EditText
+                android:layout_width="222dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/postalcodeaddress"
+                android:layout_marginTop="11dp"
+                android:hint="Postal Code"
+                android:layout_gravity="center"
+                android:textColorHint="#220303" />
+
+</LinearLayout>
+
+
+            <Button
+                android:layout_width="244dp"
+                android:layout_height="wrap_content"
+                android:text="Save and start add patients"
+                android:id="@+id/saveandstart"
+                android:layout_marginTop="18dp"
+                android:background="#baf9e3"
+                android:layout_gravity="center"
+                />
+
+            <Button
+                android:layout_width="222dp"
+                android:layout_height="wrap_content"
+                android:text="Cancel"
+                android:id="@+id/canceladdscene"
+                android:layout_marginTop="33dp"
+                android:background="#dbfeff"
+                android:layout_gravity="center"
+                />
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

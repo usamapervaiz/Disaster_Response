@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="#005862"
+        android:id="@+id/relativeLayout6"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Triage Code"
+            android:layout_gravity="center"
+            android:textColor="#ffffff"
+            android:textSize="24dp"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/Treatmentview" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="350dp"
+        android:background="#ffffff"
+        android:id="@+id/relativeLayout7"
+        android:layout_below="@+id/relativeLayout6"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Time by server"
+            android:id="@+id/timebyservertriagecode"
+            android:autoText="false"
+            android:textColor="#060505"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/alertini"
+            android:textColor="#f00"
+            android:layout_gravity="center_horizontal"
+            android:layout_below="@+id/triagecodepatientinfo"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="255dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Evaluation"
+            android:textColor="#140051"
+            android:id="@+id/titlemenu"
+            android:textSize="30dp"
+            android:gravity="center"
+            android:layout_below="@+id/alertini"
+            android:layout_alignLeft="@+id/radioGrouptriage"
+            android:layout_alignStart="@+id/radioGrouptriage" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="patientinfo"
+            android:id="@+id/triagecodepatientinfo"
+            android:autoText="false"
+            android:textColor="#060505"
+            android:layout_below="@+id/timebyservertreatmentbleed"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="18dp" />
+
+        <RadioGroup
+            android:layout_width="222dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:id="@+id/radioGrouptriage"
+            android:layout_below="@+id/titlemenu"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="4dp">
+
+            <RadioButton
+                android:id="@+id/initial"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Initial"
+                android:checked="true" />
+
+            <RadioButton
+                android:id="@+id/Secondary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Secondary"
+                android:checked="false" />
+
+            <RadioButton
+                android:id="@+id/Other"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Other"
+                android:checked="false" />
+
+            <RadioButton
+                android:id="@+id/Hospital"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hospital"
+                android:checked="false" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Save"
+                android:id="@+id/savetriagecode"
+                android:layout_gravity="center_horizontal" />
+        </RadioGroup>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:background="#ffffff"
+        android:id="@+id/relativeLayout9"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/relativeLayout7">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tableRow">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="100dp"
+                android:background="#f00"
+                android:id="@+id/relativeLayout10"
+           android:layout_weight="1"
+                android:layout_below="@+id/relativeLayout7"
+
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Immediate"
+                    android:id="@+id/textView23"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="#ffffff"
+                    android:textSize="15dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="100dp"
+                android:background="#fbdb3a"
+                android:id="@+id/relativeLayout11"
+                android:layout_weight="1"
+                android:layout_below="@+id/relativeLayout7" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Delay"
+                    android:id="@+id/textView24"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="#000"
+                    android:textSize="16dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="100dp"
+                android:background="#13bd00"
+                android:id="@+id/relativeLayout13"
+                android:layout_weight="1"
+                android:layout_below="@+id/relativeLayout7" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Minor"
+                    android:id="@+id/textView25"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="#000"
+                    android:textSize="16dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="100dp"
+                android:background="#000"
+                android:id="@+id/relativeLayout12"
+                android:layout_weight="1"
+                android:layout_below="@+id/relativeLayout7" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Deceased"
+                    android:id="@+id/textView26"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="#fff"
+                    android:textSize="16dp" />
+            </RelativeLayout>
+        </TableRow>
+
+    </RelativeLayout>
+</RelativeLayout>

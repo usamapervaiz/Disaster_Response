@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="#005862"
+        android:id="@+id/relativeLayout6"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Treatment - Vitals"
+            android:layout_gravity="center"
+            android:textColor="#ffffff"
+            android:textSize="24dp"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/Treatmentview" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="#ffffff"
+        android:id="@+id/relativeLayout7"
+        android:layout_below="@+id/relativeLayout6"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true">
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/scrollView4" >
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Time by server"
+                    android:id="@+id/timebyservertreatmentvital"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:autoText="false"
+                    android:textColor="#060505"
+                    android:layout_gravity="center_horizontal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="patient info"
+                    android:id="@+id/vitalpatientinfo"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:autoText="false"
+                    android:textColor="#060505"
+                    android:layout_gravity="center_horizontal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:id="@+id/alerttreatmentvital"
+                    android:textColor="#f00"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_below="@+id/timebyservertreatmentvital"
+                    android:layout_centerHorizontal="true" />
+
+                <TextView
+                    android:layout_width="255dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Pulse :"
+                    android:textColor="#140051"
+                    android:id="@+id/textView13"
+                    android:layout_below="@+id/alerttreatmentvital"
+                    android:layout_centerHorizontal="true" />
+
+                <EditText
+                    android:layout_width="222dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/bvmedit"
+                    android:hint="pulse"
+                    android:layout_gravity="center"
+                    android:layout_below="@+id/textView13"
+                    android:layout_centerHorizontal="true" />
+
+                <TextView
+                    android:layout_width="255dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Level of consiciousness :"
+                    android:textColor="#140051"
+                    android:id="@+id/textView14"
+                    android:layout_below="@+id/respiration"
+                    android:layout_alignLeft="@+id/textView15"
+                    android:layout_alignStart="@+id/textView15" />
+
+                <EditText
+                    android:layout_width="222dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:id="@+id/levelofconsiciousness"
+                    android:hint="Level of consiciousness"
+                    android:layout_below="@+id/textView14"
+                    android:layout_alignLeft="@+id/respiration"
+                    android:layout_alignStart="@+id/respiration"
+                    android:layout_gravity="center_horizontal" />
+
+                <TextView
+                    android:layout_width="255dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Respiration :"
+                    android:textColor="#140051"
+                    android:id="@+id/textView15"
+                    android:layout_below="@+id/bloodpressure"
+                    android:layout_alignLeft="@+id/textView16"
+                    android:layout_alignStart="@+id/textView16" />
+
+                <EditText
+                    android:layout_width="222dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/respiration"
+                    android:hint="Respiration"
+                    android:layout_below="@+id/textView15"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_horizontal" />
+
+                <TextView
+                    android:layout_width="255dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Blood pressure :"
+                    android:textColor="#140051"
+                    android:id="@+id/textView16"
+                    android:layout_below="@+id/bvmedit"
+                    android:layout_alignLeft="@+id/textView13"
+                    android:layout_alignStart="@+id/textView13" />
+
+                <EditText
+                    android:layout_width="222dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/bloodpressure"
+                    android:hint="Blood pressure"
+                    android:layout_below="@+id/textView16"
+                    android:layout_alignLeft="@+id/bvmedit"
+                    android:layout_alignStart="@+id/bvmedit"
+                    android:inputType="number"
+                    android:layout_gravity="center_horizontal" />
+
+                <ImageButton
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/addvital"
+                    android:layout_below="@+id/levelofconsiciousness"
+                    android:layout_alignRight="@+id/textView14"
+                    android:layout_alignEnd="@+id/textView14"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/p" />
+
+                <ScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/scrollView2"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_below="@+id/addvital">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="Medium Text"
+                            android:id="@+id/historyvitals"
+                            android:textColor="#0d0c0c" />
+                    </LinearLayout>
+                </ScrollView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:id="@+id/notevitals"
+                    android:layout_below="@+id/timebyservertreatmentvital"
+                    android:layout_centerHorizontal="true" />
+            </LinearLayout>
+        </ScrollView>
+
+    </RelativeLayout>
+</RelativeLayout>

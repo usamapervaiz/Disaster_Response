@@ -1,0 +1,523 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="nasaprojects.disasterresponse.MainActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentTop="true">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#b30000">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Patient Info"
+                    android:layout_gravity="center"
+                    android:textColor="#ffffff"
+                    android:textSize="28dp"
+                    android:gravity="center"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text=""
+                android:textColor="#f00"
+                android:id="@+id/alertaddpatient"
+                android:layout_gravity="center_horizontal"
+                 />
+
+
+            <ImageButton
+                android:layout_width="111dp"
+                android:layout_height="111dp"
+                android:id="@+id/addpatientpic"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/camerai"
+                android:clickable="true" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="click to Add patient pic"
+                android:textColor="#210"
+                android:layout_gravity="center_horizontal"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/lastscenenumberpatient"
+                android:layout_marginTop="18dp"
+                android:layout_gravity="center"
+                android:text="Scene number"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/gpstextpatient"
+                android:layout_marginTop="18dp"
+                android:layout_gravity="center_horizontal"
+                android:text="Gps location" />
+
+            <Button
+                android:layout_width="255dp"
+                android:layout_height="wrap_content"
+                android:text="+ Add patient info"
+                android:id="@+id/addpatientinfo"
+                android:layout_marginTop="18dp"
+                android:background="#040404"
+                android:layout_gravity="center"
+                android:textColor="#f7f7f7"
+                android:alpha="1"
+                android:textSize="17dp" />
+
+            <LinearLayout
+
+                 android:orientation="vertical"
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:id="@+id/layout_addpatientinfo_addpatientvaluespage"
+
+                android:visibility="gone">
+
+
+
+
+                <TextView
+                    android:layout_width="255dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="11dp"
+                    android:layout_gravity="center"
+                    android:text="Last Name :"
+                    android:textColor="#520000" />
+
+            <EditText
+                android:layout_width="255dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/addpatientvaluespagelastname"
+                android:layout_marginTop="2dp"
+                android:hint="Last Name"
+                android:layout_gravity="center"
+                android:textColorHint="#220303" />
+
+
+                <TextView
+                    android:layout_width="255dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="11dp"
+                    android:layout_gravity="center"
+                    android:text="First Name :"
+                    android:textColor="#520000" />
+            <EditText
+                android:layout_width="255dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/addpatientvaluespagefirstname"
+                android:layout_marginTop="2dp"
+                android:hint="First Name"
+                android:layout_gravity="center"
+                android:textColorHint="#220303" />
+
+
+                <TextView
+                    android:layout_width="255dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="11dp"
+                    android:layout_gravity="center"
+                    android:text="Middle Name :"
+                    android:textColor="#520000" />
+            <EditText
+                android:layout_width="255dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/addpatientvaluespagemiddlename"
+                android:layout_marginTop="2dp"
+                android:hint="Middle Name"
+                android:layout_gravity="center"
+                android:textColorHint="#220303" />
+
+
+                <TextView
+                    android:layout_width="255dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="11dp"
+                    android:layout_gravity="center"
+                    android:text="Date of Birth :"
+                    android:textColor="#520000" />
+            <EditText
+                android:layout_width="255dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/addpatientvaluespagedateofbirth"
+                android:layout_marginTop="2dp"
+                android:hint="Date of Birth"
+                android:inputType="date"
+                android:layout_gravity="center"
+                android:textColorHint="#220303" />
+
+
+                <TextView
+                    android:layout_width="255dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="11dp"
+                    android:layout_gravity="center"
+                    android:text="Age Range :"
+                    android:textColor="#520000" />
+            <EditText
+                android:layout_width="255dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/addpatientvaluespageagerange"
+                android:inputType="date"
+                android:layout_marginTop="2dp"
+                android:hint="Age Range"
+                android:layout_gravity="center"
+                android:textColorHint="#220303" />
+</LinearLayout>
+
+            <Button
+                android:layout_width="255dp"
+                android:layout_height="wrap_content"
+                android:text="+ Add patient Description"
+                android:id="@+id/addpatientdescription"
+                android:layout_marginTop="18dp"
+                android:background="#040404"
+                android:layout_gravity="center"
+                android:textColor="#f7f7f7"
+                android:alpha="1"
+                android:textSize="17dp" />
+
+
+            <LinearLayout
+
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/layout_addpatientdescription_addpatientvaluespage"
+
+                android:visibility="gone">
+
+
+                <Spinner
+                    android:layout_width="255dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/spinnerraceaddpatientvaluespage"
+                    android:layout_marginTop="11dp"
+                    android:entries="@array/Race_arrays"
+                    android:layout_gravity="center_horizontal" />
+
+
+                <Spinner
+                    android:layout_width="255dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/spinnergenderaddpatientvaluespage"
+                    android:layout_marginTop="11dp"
+                    android:entries="@array/Gender_arrays"
+                    android:layout_gravity="center_horizontal" />
+
+
+                <TextView
+                    android:layout_width="255dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="11dp"
+                    android:layout_gravity="center"
+                    android:text="Height Inch :"
+                    android:textColor="#520000" />
+
+                <EditText
+                    android:layout_width="255dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/hieght_addpatientvaluespage"
+                    android:inputType="number"
+                    android:layout_marginTop="2dp"
+                    android:hint="Height Inch"
+                    android:layout_gravity="center"
+                    android:textColorHint="#220303" />
+
+
+                <TextView
+                    android:layout_width="255dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="11dp"
+                    android:layout_gravity="center"
+                    android:text="Weight Kg :"
+                    android:textColor="#520000" />
+                <EditText
+                    android:layout_width="255dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/weight_addpatientvaluespage"
+                    android:inputType="number"
+                    android:layout_marginTop="2dp"
+                    android:hint="Weight Kg"
+                    android:layout_gravity="center"
+                    android:textColorHint="#220303" />
+
+
+
+            </LinearLayout>
+
+
+            <Button
+                android:layout_width="255dp"
+                android:layout_height="wrap_content"
+                android:text="+ Add patient address"
+                android:id="@+id/addpatientaddress"
+                android:layout_marginTop="18dp"
+                android:background="#040404"
+                android:layout_gravity="center"
+                android:textColor="#f7f7f7"
+                android:alpha="1"
+                android:textSize="17dp" />
+
+
+            <LinearLayout
+
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/layout_addpatientaddress_addpatientvaluespage"
+
+                android:visibility="gone">
+
+
+
+
+
+                <TextView
+                    android:layout_width="255dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="11dp"
+                    android:layout_gravity="center"
+                    android:text="Street Address :"
+                    android:textColor="#520000" />
+
+                <EditText
+                    android:layout_width="255dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/streetaddress_addpatientvaluespage"
+                    android:layout_marginTop="2dp"
+                    android:hint="Street Address"
+                    android:layout_gravity="center"
+                    android:textColorHint="#220303" />
+
+
+                <TextView
+                    android:layout_width="255dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="11dp"
+                    android:layout_gravity="center"
+                    android:text="City :"
+                    android:textColor="#520000" />
+                <EditText
+                    android:layout_width="255dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/City_addpatientvaluespage"
+                    android:layout_marginTop="2dp"
+                    android:hint="City"
+                    android:layout_gravity="center"
+                    android:textColorHint="#220303" />
+
+
+                <TextView
+                    android:layout_width="255dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="11dp"
+                    android:layout_gravity="center"
+                    android:text="State :"
+                    android:textColor="#520000" />
+                <EditText
+                    android:layout_width="255dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/State_addpatientvaluespage"
+                    android:layout_marginTop="2dp"
+                    android:hint="State"
+                    android:layout_gravity="center"
+                    android:textColorHint="#220303" />
+
+
+                <TextView
+                    android:layout_width="255dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="11dp"
+                    android:layout_gravity="center"
+                    android:text="Zip code :"
+                    android:textColor="#520000" />
+                <EditText
+                    android:layout_width="255dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/Zipcode_addpatientvaluespage"
+                    android:layout_marginTop="2dp"
+                    android:hint="Zip Code"
+                    android:layout_gravity="center"
+                    android:textColorHint="#220303" />
+
+
+                <TextView
+                    android:layout_width="255dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="11dp"
+                    android:layout_gravity="center"
+                    android:text="Phone Number :"
+                    android:textColor="#520000" />
+                <EditText
+                    android:layout_width="255dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/Phone_addpatientvaluespage"
+                    android:layout_marginTop="2dp"
+                    android:hint="Phone Number"
+                    android:layout_gravity="center"
+                    android:textColorHint="#220303" />
+
+            </LinearLayout>
+
+            <Button
+                android:layout_width="255dp"
+                android:layout_height="wrap_content"
+                android:text="+ patient Medical history"
+                android:id="@+id/addpatientmedical"
+                android:layout_marginTop="18dp"
+                android:background="#040404"
+                android:layout_gravity="center"
+                android:textColor="#f7f7f7"
+                android:alpha="1"
+                android:textSize="17dp" />
+
+
+            <LinearLayout
+
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/layout_addpatientmedicalhistory_addpatientvaluespage"
+
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="255dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="11dp"
+                    android:layout_gravity="center"
+                    android:text="Problems :"
+                    android:textColor="#520000" />
+
+                <EditText
+                    android:layout_width="255dp"
+                    android:layout_height="160dp"
+                    android:id="@+id/Problems_addpatientvaluespage"
+                    android:inputType="text|textMultiLine"
+                    android:layout_marginTop="2dp"
+                    android:hint="Problems"
+                    android:layout_gravity="center"
+                    android:textColorHint="#220303"
+                    android:gravity="top" />
+
+
+
+
+
+
+                <TextView
+                    android:layout_width="255dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="11dp"
+                    android:layout_gravity="center"
+                    android:text="Medications :"
+                    android:textColor="#520000" />
+                <EditText
+                    android:layout_width="255dp"
+                    android:layout_height="160dp"
+                    android:id="@+id/medications_addpatientvaluespage"
+                    android:inputType="text|textMultiLine"
+                    android:layout_marginTop="2dp"
+                    android:hint="Medications"
+                    android:layout_gravity="center"
+                    android:textColorHint="#220303"
+                    android:gravity="top"
+                    />
+
+
+                <TextView
+                    android:layout_width="255dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="11dp"
+                    android:layout_gravity="center"
+                    android:text="Allergies :"
+                    android:textColor="#520000" />
+                <EditText
+                    android:layout_width="255dp"
+                    android:layout_height="160dp"
+                    android:id="@+id/Alergies_addpatientvaluespage"
+                    android:inputType="text|textMultiLine"
+                    android:layout_marginTop="2dp"
+                    android:hint="Allergies"
+                    android:layout_gravity="center"
+                    android:textColorHint="#220303"
+                    android:gravity="top"
+                    />
+
+
+
+
+            </LinearLayout>
+
+
+
+            <Button
+                android:layout_width="255dp"
+                android:layout_height="wrap_content"
+                android:text="Save and add another patient"
+                android:id="@+id/savepatientandaddother"
+                android:layout_marginTop="18dp"
+                android:background="#baf9e3"
+                android:layout_gravity="center"
+                />
+
+            <Button
+                android:layout_width="255dp"
+                android:layout_height="wrap_content"
+                android:text="Cancel"
+                android:id="@+id/canceladdpatient"
+                android:layout_marginTop="33dp"
+                android:background="#dbfeff"
+                android:layout_gravity="center"
+                />
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

@@ -1,0 +1,34 @@
+* crashes on other platforms done 
+* back to menu after adding the patient info done
+* add triage to menu slide 9 -> sound slides
+
+orders
+3- add triage
+4- add injury details
+5- add vital
+6- add treatment
+
+* 7.1 fully crash 
+* alot of crashes 4.1 
+* show the tag 
+
+history : select patient to be edited and show the patients with the tags
+
+
+------
+scene window gps location not working 
+more info about scene number and show patients  done
+patient id and name for each page  done
+date and time slide 2 and the patient id in the slide 2  done
+show all patients info names and id for the active scene done
+add slide 9 before 10 done 
+add line hover for selection for slide 10+11 done
+add clear for slide 10+11 done
+split triage injury from the patient information and slide 9 in menu alone done
+sound does not stop 
+control bleeding not showing
+show the color that attached done
+add slide 11 done
+
+body front name to body back * done
+wrong hint in the add vital page *  done

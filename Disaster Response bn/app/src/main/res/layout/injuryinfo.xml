@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="#005862"
+        android:id="@+id/relativeLayout6"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Injury Info"
+            android:layout_gravity="center"
+            android:textColor="#ffffff"
+            android:textSize="24dp"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/Treatmentview" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="350dp"
+        android:background="#ffffff"
+        android:id="@+id/relativeLayout7"
+        android:layout_below="@+id/relativeLayout6"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true">
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/scrollView6" >
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Time by server"
+                    android:id="@+id/timebyserverinjuryinfo"
+                    android:autoText="false"
+                    android:textColor="#060505"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_horizontal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="patientinfo"
+                    android:id="@+id/injuryinfopatientinfo"
+                    android:autoText="false"
+                    android:textColor="#060505"
+                    android:layout_below="@+id/timebyservertreatmentbleed"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="18dp"
+                    android:layout_gravity="center_horizontal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:id="@+id/alertinjuryinfo"
+                    android:textColor="#f00"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_below="@+id/triagecodepatientinfo"
+                    android:layout_centerHorizontal="true" />
+
+                <TextView
+                    android:layout_width="255dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Chief complaint"
+                    android:textColor="#140051"
+                    android:id="@+id/titlemenu"
+                    android:textSize="30dp"
+                    android:gravity="center"
+                    android:layout_below="@+id/alerttreatmentbleed"
+                    android:layout_centerHorizontal="true" />
+
+                <RadioGroup
+                    android:layout_width="222dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:id="@+id/radioGroupinjury"
+                    android:layout_below="@+id/titlemenu"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="4dp">
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Head Injury"
+                        android:id="@+id/headinjurycheckbox"
+                        android:checked="false" />
+
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Blunt Trauma"
+                        android:id="@+id/blunttraumacheckbox"
+                        android:checked="false" />
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Burn"
+                        android:id="@+id/burncheckbox"
+                        android:checked="false" />
+
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Laceration"
+                        android:id="@+id/lacerationcheckbox"
+                        android:checked="false" />
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Cardiac"
+                        android:id="@+id/cardiaccheckbox"
+                        android:checked="false" />
+
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Diabetic"
+                        android:id="@+id/diabeticcheckbox"
+                        android:checked="false" />
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Haz-mat Exposure "
+                        android:id="@+id/hazmatexposurecheckbox"
+                        android:checked="false" />
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="C-Spine"
+                        android:id="@+id/cspinecheckbox"
+                        android:checked="false" />
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Penetrating injury"
+                        android:id="@+id/penetratinginjurycheckbox"
+                        android:checked="false" />
+
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Fracture"
+                        android:id="@+id/fracturecheckbox"
+                        android:checked="false" />
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Amputation"
+                        android:id="@+id/amputationcheckbox"
+                        android:checked="false" />
+
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Respiratory"
+                        android:id="@+id/respiratorycheckbox"
+                        android:checked="false" />
+
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="OB/GYN"
+                        android:id="@+id/obgyncheckbox"
+                        android:checked="false" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/othertypeinjury"
+                        android:layout_gravity="center_horizontal"
+                        android:hint="Other" />
+
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/radiogroupinjuryinfo">
+
+                        <RadioButton
+                            android:id="@+id/Radiation"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Radiation"
+                            android:checked="true" />
+
+                        <RadioButton
+                            android:id="@+id/Biological"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Biological"
+                            android:checked="false" />
+
+                        <RadioButton
+                            android:id="@+id/Chemical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Chemical"
+                            android:checked="false" />
+                    </RadioGroup>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/typeinjury"
+                        android:layout_gravity="center_horizontal"
+                        android:hint="Type" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Save"
+                        android:id="@+id/saveinjuryinfo"
+                        android:layout_gravity="center_horizontal" />
+                </RadioGroup>
+            </LinearLayout>
+        </ScrollView>
+
+    </RelativeLayout>
+
+</RelativeLayout>

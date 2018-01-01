@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="nasaprojects.disasterresponse.MainActivity">
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="57dp"
+        android:background="#05bebe"
+        android:layout_alignParentTop="false"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentStart="true"
+        android:id="@+id/relativeLayout"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Disaster Response"
+            android:layout_gravity="center"
+            android:textColor="#ffffff"
+            android:textSize="24dp"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/textView5" />
+
+        <ImageButton
+            android:layout_width="47dp"
+            android:layout_height="47dp"
+            android:id="@+id/logout"
+            android:background="@drawable/logout"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Last Disaster name\nLast Disaster number"
+        android:id="@+id/disasternameandnumber"
+        android:textSize="15dp"
+        android:textColor="#330000"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true" />
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text=""
+        android:id="@+id/textView2"
+        android:textColor="#a40000"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="32dp" />
+
+    <FrameLayout
+        android:layout_width="190dp"
+        android:layout_height="95dp"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/framescene"
+        android:layout_toLeftOf="@+id/framevital"
+        android:layout_toStartOf="@+id/framevital">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="add Scene"
+            android:id="@+id/textView3"
+            android:layout_below="@+id/addscene"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal|bottom" />
+
+        <ImageButton
+            android:id="@+id/addscene"
+            android:layout_width="65dp"
+            android:layout_height="61dp"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal|top"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/addscene" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="190dp"
+        android:layout_height="95dp"
+        android:id="@+id/framevital"
+        android:layout_below="@+id/framescene"
+        android:layout_alignLeft="@+id/frametriage"
+        android:layout_alignStart="@+id/frametriage">
+
+        <TextView
+            android:id="@+id/textView112"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/addtreatment"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal|bottom"
+            android:text="add triage"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <ImageButton
+            android:id="@+id/triagedetailsbutton"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_below="@+id/relativeLayout"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal|top"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/triage" />
+
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="190dp"
+        android:layout_height="95dp"
+        android:id="@+id/frametreament"
+        android:layout_below="@+id/framevital"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/framevital"
+        android:layout_toStartOf="@+id/framevital">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="add vital"
+            android:id="@+id/textView19"
+            android:layout_below="@+id/addvital"
+            android:layout_alignRight="@+id/addvital"
+            android:layout_alignEnd="@+id/addvital"
+            android:layout_gravity="center_horizontal|bottom" />
+
+        <ImageButton
+            android:layout_width="66dp"
+            android:layout_height="61dp"
+            android:id="@+id/addvital"
+            android:background="@drawable/vitalplus"
+            android:layout_below="@+id/textView20"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="9dp"
+            android:layout_gravity="center_horizontal|top" />
+
+    </FrameLayout>
+
+    <ImageButton
+        android:layout_width="33dp"
+        android:layout_height="33dp"
+        android:id="@+id/historybutton"
+        android:background="@drawable/history"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/framevital"
+        android:layout_alignEnd="@+id/framevital" />
+
+    <FrameLayout
+        android:id="@+id/frameinjury"
+        android:layout_width="195dp"
+        android:layout_height="95dp"
+        android:layout_alignEnd="@+id/textView2"
+        android:layout_alignRight="@+id/textView2"
+        android:layout_below="@+id/framescene">
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/addtreatment"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal|bottom"
+            android:text="add injury"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <ImageButton
+            android:id="@+id/injurydetailsbutton"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_below="@+id/relativeLayout"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal|top"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/injury" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/framepatient"
+        android:layout_width="190dp"
+        android:layout_height="95dp"
+        android:layout_alignLeft="@+id/framevital"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignStart="@+id/framevital"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_toEndOf="@+id/frametreament">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView3"
+            android:layout_alignStart="@+id/textView3"
+            android:layout_below="@+id/addpatient"
+            android:layout_gravity="center_horizontal|bottom"
+            android:text="add patient"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <ImageButton
+            android:id="@+id/addpatient"
+            android:layout_width="65dp"
+            android:layout_height="61dp"
+            android:layout_below="@+id/textView3"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal|top"
+            android:layout_marginTop="9dp"
+            android:background="@drawable/addp" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="195dp"
+        android:layout_height="95dp"
+        android:id="@+id/frametriage"
+        android:layout_below="@+id/framevital"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/frameinjury"
+        android:layout_toRightOf="@+id/frameinjury">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="add treatment"
+            android:id="@+id/textView20"
+            android:layout_below="@+id/addtreatment"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal|bottom" />
+
+        <ImageButton
+            android:id="@+id/addtreatment"
+            android:layout_width="61dp"
+            android:layout_height="61dp"
+            android:layout_below="@+id/textView4"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal|top"
+            android:layout_marginTop="9dp"
+            android:background="@drawable/treatment" />
+
+    </FrameLayout>
+
+
+</RelativeLayout>

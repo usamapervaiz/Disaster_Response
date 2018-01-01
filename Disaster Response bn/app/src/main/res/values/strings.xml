@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">Disaster Response</string>
+
+
+    <string-array name="disasters_arrays">
+        <item>Select disaster</item>
+        <item>Disaster type</item>
+        <item>Tropical cyclones</item>
+        <item>Floods</item>
+        <item>Earthquakes</item>
+        <item>Environmental disasters</item>
+        <item>Fires</item>
+        <item>Road Accident</item>
+        <item>Rail Accident</item>
+        <item>Aircraft Accident</item>
+        <item>Industrial disasters</item>
+        <item>Structural failures</item>
+        <item>Nuclear and radiation accidents</item>
+        <item>Epidemics</item>
+        <item>Battles and violent</item>
+        <item>Military disasters</item>
+        <item>Terrorist incidents</item>
+        <item>Massacres</item>
+
+
+        <item>Others</item>
+    </string-array>
+
+
+    <string-array name="Gender_arrays">
+        <item>Select Gender</item>
+        <item>Male</item>
+        <item>Female</item>
+
+        <item>Unkown</item>
+    </string-array>
+
+
+    <string-array name="Race_arrays">
+        <item>Select Race</item>
+
+        <item>Caucasian</item>
+        <item>Mongoloid</item>
+        <item>Asian</item>
+        <item>Negroid</item>
+
+        <item>Unkown</item>
+    </string-array>
+
+</resources>
